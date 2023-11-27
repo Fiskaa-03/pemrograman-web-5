@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="row justify-content-between">
-    <div class="col-10"><b>Kategori </b></div>
+    <div class="col-10"><b>Produk </b></div>
     <div class="col-2 d-flex justify-content-end align-items-end">
       <button class="btn btn-dark btn-sm" type="button">add</button>
     </div>

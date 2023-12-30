@@ -28,12 +28,8 @@
 				<th scope="row"><?php echo $data['id_kategori']; ?></th>
 				<td><?php echo $data['nama_kategori']; ?></td>
 				<td>
-					<a href="index.php?page=kategori-edt&id=<?php echo $data['id_kategori']; ?>">
-						<button class="btn btn-dark btn-sm" type="button">edit</button>
-					</a>
-					<a href="index.php?page=kategori-del&id=<?php echo $data['id_kategori']; ?>">
-						<button class="btn btn-dark btn-sm" type="button">delete</button>
-					</a>
+					<a href="index.php?page=kategori-edt&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-dark btn-sm" type="button">edit</button></a>
+					<a href="index.php?page=kategori-del&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-dark btn-sm" type="button">delete</button></a>
 				</td>
 			</tr>
 		<?php } ?>

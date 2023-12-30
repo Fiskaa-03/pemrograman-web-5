@@ -13,6 +13,7 @@
 			<th scope="col" width="5%">No</th>
 			<th scope="col">Nama</th>
 			<th scope="col">Kategori</th>
+			<th scope="col">Stok</th>
 			<th scope="col">Harga</th>
 			<th scope="col">Gambar</th>
 			<th scope="col" width="12%">Aksi</th>
@@ -31,6 +32,7 @@
 				<th scope="row"><?php echo $data['id_produk']; ?></th>
 				<td><?php echo $data['nama_produk']; ?></td>
 				<td><?php echo $data['nama_kategori']; ?></td>
+				<td><?php echo $data['stok']; ?></td>
 				<td class="align-right">
 					<?php
 					$uang = $data['harga'];
@@ -40,12 +42,8 @@
 				</td>
 				<td><?php echo $data['gambar']; ?></td>
 				<td>
-					<a href="index.php?page=produk-edt&id=<?php echo $data['id_produk']; ?>">
-						<button class="btn btn-dark btn-sm" type="button">edit</button>
-					</a>
-					<a href="index.php?page=produk-del&id=<?php echo $data['id_produk']; ?>">
-						<button class="btn btn-dark btn-sm" type="button">delete</button>
-					</a>
+					<a href="index.php?page=produk-edt&id=<?php echo $data['id_produk']; ?>"><button class="btn btn-dark btn-sm" type="button">edit</button></a>
+					<a href="index.php?page=produk-del&id=<?php echo $data['id_produk']; ?>"><button class="btn btn-dark btn-sm" type="button">delete</button></a>
 				</td>
 			</tr>
 		<?php } ?>

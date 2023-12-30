@@ -87,7 +87,7 @@
     ?>
     <div class="p-3 table-responsive">
       <?php
-      include "conn.php"; 
+      include "sql.php"; 
       $halaman = isset($_GET['page']) ? $_GET['page'] : 'home';
 
       switch ($halaman) {
